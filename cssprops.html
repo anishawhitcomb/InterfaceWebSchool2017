@@ -17,6 +17,7 @@
             }
             
             body{
+                margin: 0;
                 color: green;
                 font-size: 10vh;
                 font-weight: bold;
@@ -24,22 +25,24 @@
             }
                 
             .column{
-                height: 100vh;
+                display: inline-block;
+                width: 46%;
+                height: 80vh;
+                font-size: 10vh;
                 background-color: orange;
-                border: 1px solid black;
+                border: 10px solid black;
                 padding: 2vh;
-                margin: 2vh;
-                font-size: 2vh;
+                margin-left: 2%;
+                margin-right: 2%;
+                box-sizing: border-box;
             
             }
             
-            
         </style>
-        
     </head>
     <body>
-        <div id="one" class="column">Test1</div>
-        <div id="two" class="column">Test2</div>
+        <div id="one" class="column">Test1</div><!---
+        ---><div id="two" class="column">Test2</div>
         <div id="logo"></div>
         <div id="container">
             <p>A bunch of text A bunch of text</p>
