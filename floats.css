@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    background-color: chartreuse;
+}
+
+.left{
+    float: left;
+    margin: 3vmin;
+    border: 1px solid black;
+}
+
+
+.right{
+    float: right;
+    margin: 3vmin;
+    margin-right: 0;
+    border: 1px solid black
+    clear: right;
+}
+
+header{
+    height: 15vh;
+    background-color: gray;
+}
+
+main{
+    float: left;
+    width: 70%;
+    background-color: darkviolet;
+    min-height: 75vh;
+}
+
+#side{
+    float: right;
+    width: 30%;
+    background-color: coral;
+    min-height: 75vh;
+}
+
+
+footer{
+    height: 10vh;
+    background-color: dodgerblue;
+    clear: both;
+}
