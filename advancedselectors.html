@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a{
+                font-size: 10vh;
+                color: lightgreen;
+            }
+            
+            a:hover{
+                color: blue;
+                text-decoration: none;
+            }
+            
+            input{
+                width: 25vw;
+                border-color: red;
+            }
+            
+            input:focus{
+                border-color: green;
+                background-color: gray;
+            }
+            
+            label.error+input{
+                background-color: red;
+            }
+            
+            #selectItems > span{
+                color: black;
+                font-weight: bold;
+            }
+            
+            #selectItems > .break ~ span{
+                font-weight: normal;
+                color: lightgray;
+            }
+            
+            a[target="blank"]{
+                color: green;
+            }
+            
+            a[href*="google"]{
+                color: orange;
+            }
+            
+            #selectItems > span:first-of-type{
+                color: green:
+            }
+
+            #selectItems > span:last-of-type{
+                color: blue;
+            }
+            
+            tr:nth-of-type(even){
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>First</td>
+                <td>402###</td>
+                <td>Female</td>
+            </tr>
+               <tr>
+                <td>First</td>
+                <td>402###</td>
+                <td>Female</td>
+            </tr>
+               <tr>
+                <td>First</td>
+                <td>402###</td>
+                <td>Female</td>
+            </tr>
+               <tr>
+                <td>First</td>
+                <td>402###</td>
+                <td>Female</td>
+            </tr>
+        </table>
+        
+        <div>
+            <label></label><input />
+            <label class="error"></label><input />
+            <label></label><input />
+            <label></label><input />
+            <label></label><input />
+        </div>
+        <a href="http://google.com" target="_blank">Google</a>
+        <a href="http://apple.com" target="_blank">Apple</a>
+        <a href="http://yahoo.com/google">Yahoo</a>
+        <br/>
+        <br/>
+        <input type="text" />
+        <input type="text" />
+        <textarea></textarea>
+        <select>
+            <option value="T">True</option>
+            <option value="F">False</option>
+        </select>
+        <br/>
+        <br/>
+        <div id="selectItems">
+            <span>Item 1</span><br/>
+            <span>Item 2</span><br/>
+            <span>Item 3</span><br/>
+            <span>Item 4</span><br/>
+            <div class="break"></div>
+            <span>Item 5</span><br/>
+            <span>Item 6</span><br/>
+            <span>Item 7</span><br/>
+        </div>
+    </body>
+</html>
