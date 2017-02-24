@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-    
-    
-    
-    
-    
+        <style>
+            #box{
+                width: 50vmin;
+                height: 50vmin;
+                border: 1px solid black;
+                background-color: white;
+            }
+        </style>
     </head>
     <body>
-        <div>
-            <label>First Name</label>
-            <input type="text" id="fname" />
-            <br/>
-            <span>Starting Text</span>
+        <div id="box">
+            
         </div>
+        <div>
+            <label>Input:</label>
+            <input type="text" id="input" />
+            <br/>
+            <button type="button" id="go">Go</button>
+        </div>
+         
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script>
+            function changeBox(){
+                var input = $("#input").val();
+                if(parseFloat(input)){
+                    $("#box").css({
+                        width: input+"vmin",
+                        height: input+"vmin"
+                    });
+                }else{
+                    $("#box").css({
+                        backgroundColor: input
+                    });
+                }
+                
+            }
+            
+            
     
-       <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-       
+            
+            $("#go").click(changeBox);
+            
+            $("input").keypress(function(event){
+                if(event.charCode == 13){
+                    changeBox();
+                }
+            });
+        </script>
     </body>
-
-
-
 </html>
