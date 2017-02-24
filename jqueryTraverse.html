@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    
+    
+    
+    
+    
+    
+    </head>
+    <body>
+        <input id="name" />
+        <input type="checkbox" id="important" />
+        <button type="button" id="add">Add</button>
+        <div id="list"></div>
+        <br/><br/><br/>
+        <label>Zip Code: </label>
+        <input type="number" id="zip" />
+        <button type="button" id="getData">Get Data</button>
+        <br/><br/><br/>
+        <div id="container">This will be replaced</div>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script>
+            $("#getData").click(function(){
+                var zip = $("#zip").val();
+                $.ajax({
+                    url: "http://api.openweathermap.org/data/2.5/weather",
+                    data: {
+                        zip: zip+",us",
+                        APPID: "442a58545b0effda4684a876b7397473",
+                        units: "imperial"
+                    }
+                }).success(function(data){
+                    $("body".append("<span>The current temp is: " + data.main.temp + F</div>)
+                    
+                });
+            });
+            
+            
+            $("add").click(function(){
+               var name = $("#name").val();
+                var important = $("#important").val()
+                $('#list').append("<div class='wrapper'><div class='item'>" + name + "</div></div>)
+                if(important){
+                $('#list').find(".item:last-of-type").css("color", "red");
+                }
+            });
+                    
+            $('#container').load("footer.html");
+        
+        </script>
+    </body>
+
+</html>
