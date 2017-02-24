@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <style>
+            
+            body{
+                margin: 0;
+                cursor: default;
+            }
+            
+            #bigimage{
+                height: 100vh;
+                background: url("https://static.pexels.com/photos/297755/pexels-photo-297755.jpeg");
+                background-size: cover;
+                
+            }
+            
+            #header{
+                font-family: 'Kreon', serif;
+                color: black;
+                text-align: center;
+                padding-top: 40vh;
+                font-size: 10vh;
+            }
+            
+            #home{
+                background-repeat: no-repeat;
+                font-family: 'Kreon', serif;
+                color: black;
+                text-align: right;
+                padding-right: 15vh;
+                margin: 3vh;
+                font-size: 5vh;
+                word-spacing: 3vw;
+                
+            }
+            
+            nav span:hover {
+                color: dodgerblue;
+            
+            }
+            
+            #discover{
+                
+                text-align: center;
+                font-family: 'kreon', serif;
+                color: black;
+                padding-top: 15vh;
+                font-size: 4vh;
+            }
+            
+            #discover span{
+                background-color: rgba(255, 255, 255, 1);
+                padding: 1vw;
+            }
+            
+            #discover span:hover{
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+            
+            #about{
+                text-align: center;
+                color: black;
+                font-family: 'kreon', serif;
+                font-size: 10vh;
+                padding-top: 5vh;
+                font-weight: normal;     
+            }
+            
+            #paragraph{
+                text-align: center;
+                color: black;
+                font-family: 'Kreon', serif;
+                font-size: 3vh;
+                padding-top: 10vh;
+                overflow: auto;
+            }
+            
+            #explore{
+                text-align: center;
+                color: black;
+                font-family: 'Kreon', serif;
+                font-size: 3vh;
+                padding-top: 10vh;
+            }
+            
+            #explore span{
+                background-color: rgba(245, 169, 28, 1);
+                padding: 1vw;
+            
+            }
+            
+            #explore span:hover{
+                background-color: rgba(245, 169, 28, 0.5);
+                   
+            }
+
+            #container{
+                width: 920px;
+                margin: 0px auto;
+            }
+            
+            
+            .container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                
+            }
+            
+            .container .image{
+                width: 30vw;
+                height: 30vw;
+                background-size: cover;
+            }
+        
+            
+            
+            #photo1{
+                background-image: url("images/pexels-photo-47478.jpeg");
+            }
+            
+            #photo2{
+                background-image: url("images/pexels-photo-198993.jpeg");
+            }
+            
+            #photo3{
+                background-image: url("images/pexels-photo (1).jpg");
+            }
+            
+            #photo4{
+                background-image: url("images/old-retro-antique-vintage-163136.jpeg");
+            }
+            
+            #photo5{
+                background-image: url("images/road-sky-clouds-cloudy.jpg");
+            }
+            
+            #photo6{
+                background-image: url("images/old-retro-antique-vintage-163194.jpeg");
+            }
+            
+            
+               
+            /* Style inputs with type="text", select elements and textareas */
+            input[type=text], select, textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */  
+                border: 1px solid #ccc; /* Gray border */
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                text-align: center;
+            }
+
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+                background-color: rgba(245, 169, 28, 1);
+                color: black;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: rgba(245, 169, 28, 0.7);
+            }
+
+            /* Add a background color and some padding around the form */
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                
+                
+            }
+            
+             #container1{
+                text-align: center;
+                font-family: 'Kreon', serif;
+                font-size: 4vh;
+                padding-top: 5vh;
+            }
+            
+            #info{
+                text-align: center;
+                font-size: 4vh;    
+                
+            }
+            
+            #subscribe{
+                text-align: center;
+                
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        
+         <!-- Start of nav -->
+        
+        <nav id="home">
+            <span id="Home">Home</span>
+            <span id="About">About</span>
+            <span id="Work">Work</span>
+            <span id="Blog">Blog</span>
+            <span id="Contact">Contact</span>
+        </nav>
+        
+         <!-- End of nav -->
+        
+        
+         <!-- Start of header -->
+        
+        <div id="bigimage">
+            <div id="header">journey somewhere.
+            <div id="discover"><span>Discover</span></div>
+            </div>
+        </div>
+        
+         <!-- End of header -->
+        
+    
+        
+         <!-- ABOUT, PARAGRAPH AND EXPLORE CONTAINER -->
+        
+        <div id="about"><span>About</span></div>
+        
+        <div id="paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+         <br/><br/>
+        
+        <div id="explore"><span>I want to explore</span></div>
+        
+        <br/><br/><br/><br/><br/><br/><br/>
+        
+         <!-- Start Big Image group container-->
+        
+        <div class="container">
+            <div class="image" id="photo1" src="images/pexels-photo-47478.jpeg"></div>
+            <div class="image" id="photo2"  src="images/pexels-photo-198993.jpeg"></div>
+            <div class="image" id="photo3"  src="images/pexels-photo (1).jpg"></div>
+            <div class="image" id="photo4"  src="images/old-retro-antique-vintage-163136.jpeg"></div>
+            <div class="image" id="photo5"  src="images/road-sky-clouds-cloudy.jpg"></div>
+            <div class="image" id="photo6"  src="images/old-retro-antique-vintage-163194.jpeg"></div> 
+        </div>
+        
+         <!-- End Big Image group container -->
+        
+        <br/><br/><br/><br/><br/><br/>
+    
+           <!-- Start of info, contact us --> 
+        <div id="info">
+            <div id="information"><span>Contact Us!</span>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+           
+
+        <br/>
+     
+            
+        <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+          
+         <!-- Start of Container --> 
+            <div>
+            <div class="container1">
+            <form action="/action_page.php">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your First and Last Name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email address..">
+
+            <label for="lname">Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+            <label for="lname">Address</label>
+            <input type="text" id="address" name="address" placeholder="Your address..">
+
+
+            <label for="subject">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
+
+            <input type="submit" value="Submit">
+
+            </form>
+            </div>
+            </div>
+            </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+               <!-- End of Container --> 
+
+
+            <div id="subscribe">Subscribe for updates and more!
+            <form>
+
+            <form class="my-form soundest-subscribe-form" action="/subscribe" method="post">
+
+            <input class="soundest-subscribe-input" type="text" placeholder="Enter your email address!" />
+
+            <input type="submit" value="Subscribe!" width="100px">
+
+            </form></form>
+            </div>
+            <br/><br/><br/><br/><br/><br/>
+
+
+       
+    </body>
+</html>
+
