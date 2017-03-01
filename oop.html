@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+    <body>
+    
+        <select id="selectedCar">
+            <option> value="cars"</option>
+        </select>
+        
+     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script>
+            var cars = new Array();
+            
+            var Car = function(){
+                this.color = null;
+                this.style = null;
+                this.make = null;
+                this.model = null;
+                this.speed = 0;
+                this.isRunning = false;
+                this.horsepower = 100;
+                
+                this.start = function(){
+                    this.isRunning = true;{
+                        
+                    }
+                }
+                
+                this.break = function(){
+                    if(this.speed > 0){
+                        this.speed--;
+                    }else{
+                        this.speed = 0;
+                    }
+                }
+                
+                this.gas = function()
+                    if(this.isRunning){
+                        this.speed += this.horsepower/100;
+                    }
+            
+                }
+            
+                function addCar(){
+                    var car = new Car();
+                    cars.push(car);
+                    $("#selectedCar").append("<option value='"+(cars.length-1)Car "+cars.length+</option")
+                }
+            
+            }
+            
+        
+        </script>
+    
+    </body>
+</html>
