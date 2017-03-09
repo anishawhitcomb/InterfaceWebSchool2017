@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <h1>Header 1</h1>
+        <span>Text</span>
+        <div>
+            <span>More Text</span>
+            <span>Text</span>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script>
+            function changeBackgroundColor(element, color){
+                $(element).css("background-color", color);
+            }
+            
+            $.fn.changeBGColor = function(options){
+                var settings = $.extend({
+                    color: "red",
+                    mode: "normal"
+                }, options);
+                
+                var randomColor = function(){
+                    var red = parseInt(Math.random() * 256);
+                    var green = parseInt(Math.random() * 256);
+                    var blue = parseInt(Math.random() * 256);
+                    return "rgb("+red+", "+green+", "+blue+")";
+                }
+                
+                var changeColor = function(element){
+                    if(settings.color == "random"){
+                        if(chosenColor == null){
+                            chosenColor = randomColor();
+                            $(this).css("background-color", chosenColor);
+                            return chosenColor;
+                        }else{
+                            var color = randomColor();
+                            $(this).css("background-color", color);
+                            return color;
+                        }
+                    }else{
+                        $(this).css("background-color", settings.color);
+                        return settings.color;
+                    }
+                }
+                
+                
+                function keepTrying(element){
+                    var result = changeColor(this);
+                        if(result != chosenColor){
+                            setTimeout(keepTrying, 10);
+                        }
+                    
+                }
+
+                var chosenColor;
+                this.each(function(){
+                    if(chosenColor == null){
+                        changeColor(this);
+                    }else if(chosenColor != null && settings.mode == "crazySlotMachine"){
+                        var result = changeColor(this);
+                        if(result != chosenColor){
+                            setTimeout(keepTrying, 10);
+                                
+                            }
+                        }
+                    }
+                    
+                });
+
+                return this;
+            }
+        </script>
+    </body>
+</html>
